@@ -1,0 +1,93 @@
+# Developing a Predictive Model to Determine Scam Likelihood: A Case Study on the General Population 🛡️
+
+---
+
+## 📖 Overview
+[cite_start]This project investigates the critical factors influencing scam vulnerability in contemporary society[cite: 13]. [cite_start]Developed as a Big Data and Machine Learning project for **CSC649 (Special Topic in Computer Science)** at **Universiti Teknologi MARA (UiTM)**, this research utilizes predictive modeling to identify behavioral patterns and socioeconomic conditions that increase scam susceptibility[cite: 4, 5, 15].
+
+---
+
+## 🏆 Key Performance Metrics
+[cite_start]The model was rigorously tested using multiple algorithms and 4-fold cross-validation to ensure high reliability[cite: 1187, 1190].
+
+* [cite_start]**Best Performing Model:** Random Forest Classifier[cite: 1061].
+* [cite_start]**Testing Accuracy:** Achieved a high **91.17% accuracy** on unseen data[cite: 2048].
+* [cite_start]**Training Accuracy:** 100%, indicating a perfect fit on the training dataset[cite: 1181].
+* [cite_start]**Feature Optimization:** Maintained a strong **85.55% testing accuracy** even when reduced to the top 5 most critical features[cite: 1593].
+
+---
+
+## 🔍 Feature Importance Insights
+[cite_start]Through feature selection experiments, we identified the top 5 predictors most indicative of an individual's vulnerability to online scams[cite: 1510, 1593]:
+
+1. [cite_start]**Habit of reading reviews before buying** (Highest Impact)[cite: 1514, 1593].
+2. [cite_start]**Frequency of sharing personal information online**[cite: 1515, 1593].
+3. [cite_start]**Downloads from untrusted sources**[cite: 1516, 1593].
+4. [cite_start]**Maximum amount spent in a single transaction**[cite: 1517, 1593].
+5. [cite_start]**Average daily online hours**[cite: 1518, 1593].
+
+---
+
+## 📊 Methodology
+* [cite_start]**Data Collection:** Analyzed **500 responses** from a structured survey distributed over a 50-day period[cite: 218, 672, 673].
+* **Data Preprocessing:**
+    * [cite_start]Renamed 19 features for clarity and removed non-contributing columns like timestamps[cite: 778, 782, 808].
+    * [cite_start]Applied **Label Encoding** to transform qualitative attributes into numerical formats for machine learning processing[cite: 908, 911].
+    * [cite_start]Addressed class imbalance through **upsampling** of the minority class to improve fraud detection capabilities[cite: 1033, 1038].
+* [cite_start]**Model Tuning:** Explored over **200 hyperparameter combinations** during the cross-validation phase to identify the optimal configuration[cite: 1214, 1300].
+
+---
+
+## 📂 Project Structure
+```text
+project-scam-analysis/
+│
+├── data/
+│   ├── scam_survey_responses.csv      # Original raw survey data
+│   └── cleaned_scam_data.csv          # Preprocessed and balanced dataset
+├── notebooks/
+│   ├── 01_Data_Exploration_Analysis.ipynb # Categorical & Numerical visualizations
+│   ├── 02_Data_Preprocessing.ipynb        # Cleaning, encoding, and upsampling
+│   └── 03_Predictive_Modeling_RF.ipynb    # Random Forest training & Feature Selection
+├── docs/
+│   └── Technical_Report.pdf           # Full technical documentation
+├── requirements.txt                   # Project dependencies
+└── README.md                          # Project documentation
+---
+
+## 📋 Data Dictionary
+The dataset contains 20 features capturing demographic and behavioral data. Below is a description of the key variables:
+
+| Feature | Description |
+| :--- | :--- |
+| **Scammed** | Target Variable (1: Has been scammed, 0: Has not) |
+| **Age_Group** | Categorical age ranges of respondents |
+| **Income** | Monthly income level in local currency (MYR) |
+| **Daily_Online_Hours** | Average time spent on the internet per day |
+| **Stranger_Interactions** | Frequency of interacting with unknown individuals online |
+| **Monthly_Online_Transactions** | Number of digital purchases made per month |
+| **Shares_Personal_Info** | Whether the user tends to share private data online |
+| **Downloads_From_Untrusted_Sources** | Frequency of downloading files from non-verified sites |
+| **Reads_Reviews_Before_Buying** | Consumer behavior regarding product research |
+| **Max_Single_Transaction_Spend** | The highest amount ever spent in one online purchase |
+
+---
+## 🛠️ Tech Stack
+Language: Python 3.10
+
+* Libraries: Pandas, NumPy (Data Manipulation)
+* Visualization: Matplotlib, Seaborn
+* Machine Learning: Scikit-Learn (Random Forest, K-Fold, Label Encoding)
+---
+
+## 👥 The Team
+This project was a collaborative effort by group members from UiTM:
+
+* Muhammad Ariff 
+* Muhamad Ikhwan Dannial
+* Muhammad Amirul Mifzal
+* Muhammad Akid Danial
+* Muhammad Aiman Hakimi
+---
+## 📝 License & Citation
+* Completed on 3 February 2025. This project is intended for educational and portfolio purposes. Please credit the original authors and UiTM when referencing this work.
