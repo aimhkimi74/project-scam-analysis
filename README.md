@@ -3,38 +3,38 @@
 ---
 
 ## 📖 Overview
-[cite_start]This project investigates the critical factors influencing scam vulnerability in contemporary society[cite: 13]. [cite_start]Developed as a Big Data and Machine Learning project for **CSC649 (Special Topic in Computer Science)** at **Universiti Teknologi MARA (UiTM)**, this research utilizes predictive modeling to identify behavioral patterns and socioeconomic conditions that increase scam susceptibility[cite: 4, 5, 15].
+This project investigates the critical factors influencing scam vulnerability in contemporary society. Developed as a Big Data and Machine Learning project for **CSC649 (Special Topic in Computer Science)** at **Universiti Teknologi MARA (UiTM)**, this research utilizes predictive modeling to identify behavioral patterns and socioeconomic conditions that increase scam susceptibility.
 
 ---
 
 ## 🏆 Key Performance Metrics
-[cite_start]The model was rigorously tested using multiple algorithms and 4-fold cross-validation to ensure high reliability[cite: 1187, 1190].
+The model was rigorously tested using multiple algorithms and 4-fold cross-validation to ensure high reliability.
 
-* [cite_start]**Best Performing Model:** Random Forest Classifier[cite: 1061].
-* [cite_start]**Testing Accuracy:** Achieved a high **91.17% accuracy** on unseen data[cite: 2048].
-* [cite_start]**Training Accuracy:** 100%, indicating a perfect fit on the training dataset[cite: 1181].
-* [cite_start]**Feature Optimization:** Maintained a strong **85.55% testing accuracy** even when reduced to the top 5 most critical features[cite: 1593].
+* **Best Performing Model:** Random Forest Classifier.
+* **Testing Accuracy:** Achieved a high **91.17% accuracy** on unseen data.
+* **Training Accuracy:** 100%, indicating a perfect fit on the training dataset.
+* **Feature Optimization:** Maintained a strong **85.55% testing accuracy** even when reduced to the top 5 most critical features.
 
 ---
 
 ## 🔍 Feature Importance Insights
-[cite_start]Through feature selection experiments, we identified the top 5 predictors most indicative of an individual's vulnerability to online scams[cite: 1510, 1593]:
+Through feature selection experiments, we identified the top 5 predictors most indicative of an individual's vulnerability to online scams:
 
-1. [cite_start]**Habit of reading reviews before buying** (Highest Impact)[cite: 1514, 1593].
-2. [cite_start]**Frequency of sharing personal information online**[cite: 1515, 1593].
-3. [cite_start]**Downloads from untrusted sources**[cite: 1516, 1593].
-4. [cite_start]**Maximum amount spent in a single transaction**[cite: 1517, 1593].
-5. [cite_start]**Average daily online hours**[cite: 1518, 1593].
+1. **Habit of reading reviews before buying** (Highest Impact).
+2. **Frequency of sharing personal information online**.
+3. **Downloads from untrusted sources**.
+4. **Maximum amount spent in a single transaction**.
+5. **Average daily online hours**.
 
 ---
 
 ## 📊 Methodology
-* [cite_start]**Data Collection:** Analyzed **500 responses** from a structured survey distributed over a 50-day period[cite: 218, 672, 673].
+* **Data Collection:** Analyzed **500 responses** from a structured survey distributed over a 50-day period.
 * **Data Preprocessing:**
-    * [cite_start]Renamed 19 features for clarity and removed non-contributing columns like timestamps[cite: 778, 782, 808].
-    * [cite_start]Applied **Label Encoding** to transform qualitative attributes into numerical formats for machine learning processing[cite: 908, 911].
-    * [cite_start]Addressed class imbalance through **upsampling** of the minority class to improve fraud detection capabilities[cite: 1033, 1038].
-* [cite_start]**Model Tuning:** Explored over **200 hyperparameter combinations** during the cross-validation phase to identify the optimal configuration[cite: 1214, 1300].
+    * Renamed 19 features for clarity and removed non-contributing columns like timestamps.
+    * Applied **Label Encoding** to transform qualitative attributes into numerical formats for machine learning processing.
+    * Addressed class imbalance through **upsampling** of the minority class to improve fraud detection capabilities.
+* **Model Tuning:** Explored over **200 hyperparameter combinations** during the cross-validation phase to identify the optimal configuration.
 
 ---
 
@@ -53,9 +53,11 @@ project-scam-analysis/
 │   └── Technical_Report.pdf           # Full technical documentation
 ├── requirements.txt                   # Project dependencies
 └── README.md                          # Project documentation
+```
 ---
 
 ## 📋 Data Dictionary
+
 The dataset contains 20 features capturing demographic and behavioral data. Below is a description of the key variables:
 
 | Feature | Description |
